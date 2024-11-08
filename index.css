@@ -1,0 +1,92 @@
+.heading{
+    text-align: center;
+}
+
+
+
+
+
+.speakers-slider {
+    display: flex;
+    overflow-x: auto;
+    width: 80%;
+    gap: 16px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    
+    .speaker-card {
+      flex: 0 0 auto;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      transition: transform 0.3s;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  .speaker-modal {
+    display: none; /* Hidden by default; will be shown when activated */
+    position: fixed; /* Position it above other elements */
+    top: 10%; /* Adjusted top position to ensure it's above the slider */
+    left: 50%;
+    transform: translateX(-50%); /* Center the modal horizontally */
+    width: 82%; /* Width of the modal */
+    max-width: 3000px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Higher z-index to keep it on top */
+  }
+  
+  .modal-content {
+    display: flex; /* Flex layout for image and content side-by-side */
+    gap: 30px;
+    padding: 40px;
+    align-items: center; /* Vertically center items */
+  }
+  
+  .modal-content img {
+    width: 120px; /* Fixed width for the image */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .modal-content h3,
+  .modal-content p,
+  .modal-content a {
+    margin: 5px 0;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+  #modal-slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+
+  
+  
